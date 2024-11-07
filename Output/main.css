@@ -12,4 +12,8 @@
     .tag-1{
         @apply py-1.5 px-3 border-red-500 border rounded-full hover:bg-red-500 hover:text-white transition-all
     }
+
+    .jobs-name{
+        @apply hover:underline transition-all duration-300 dark:text-white
+    }
 }
