@@ -16,4 +16,8 @@
     .jobs-name{
         @apply hover:underline transition-all duration-300 dark:text-white
     }
+
+    .tag-2{
+        @apply py-1.5 px-8 uppercase border-black border rounded-full hover:bg-green-400 transition-all
+    }
 }
