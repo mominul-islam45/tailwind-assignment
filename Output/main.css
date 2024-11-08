@@ -28,4 +28,11 @@
     .course-tag{
         @apply text-xs py-1.5 px-4 border-red-500 border rounded-full hover:bg-red-500 hover:text-white transition-all
     }
+
+    .footer-link-1{
+        @apply text-lg font-semibold opacity-100 hover:opacity-80 hover:underline hover:decoration-black/80 transition-all cursor-pointer
+    }
+    .footer-link-2{
+        @apply opacity-80 hover:opacity-100 hover:underline hover:decoration-black/80 transition-all cursor-pointer
+    }
 }
