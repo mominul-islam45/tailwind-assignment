@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="font-jakarta">
+<html lang="en" class="font-jakarta dark" id="htmlDoc">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +10,16 @@
     
     <link rel="stylesheet" href="Output/main.css">
 </head>
-<body>
+<body class="dark:bg-slate-900">
     <!-- ======= Header section start ======= -->
-    <header class="px-3 md:px-8 xl:px-12 py-3 dark:bg-slate-800 sticky top-0 backdrop-blur-md bg-white/60 z-20">
+    <header class="px-3 md:px-8 xl:px-12 py-3 dark:bg-slate-900/50 sticky top-0 backdrop-blur-md bg-white/50 z-20">
         <nav class="flex justify-between items-center">
-            <img src="Assets/logo.webp" alt="Logo" class="scale-90 sm:scale-100 cursor-pointer dark:drop-shadow-[2px_8px_3px_rgb(255,255,255/0.1)]">
+            <div class="logo-img scale-90 sm:scale-100"></div>
             <div class="items-center gap-4 md:gap-6 hidden ml:flex">
-                <a href="#" class="hover:text-red-500 transition-colors">Home</a>
-                <a href="#" class="hover:text-red-500 transition-colors">About Us</a>
+                <a href="#" class="hover:text-red-500 transition-colors dark:text-white dark:hover:text-red-500">Home</a>
+                <a href="#" class="hover:text-red-500 transition-colors dark:text-white dark:hover:text-red-500">About Us</a>
                 <a href="#" class="text-red-500">Up-skill</a>
-                <a href="#" class="hover:text-red-500 transition-colors">Contact Us</a> 
+                <a href="#" class="dark:text-white dark:hover:text-red-500 hover:text-red-500 transition-colors  ">Contact Us</a> 
             </div>
             <div class="flex items-center gap-3 md:gap-6">
                 <button class="bg-red-500 text-white py-2.5 px-5 rounded-lg hidden sm:block hover:bg-red-600 hover:scale-105 hover:shadow-md transition-all">Register Interest</button>
@@ -30,7 +30,7 @@
                 </svg>
                 
                 <!-- Dark mode toggle - Moon -->
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="scale-90 sm:scale-100 hover:scale-105 transition-all cursor-pointer" xmlns="http://www.w3.org/2000/svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="scale-90 sm:scale-100 hover:scale-105 transition-all cursor-pointer" id="switch" xmlns="http://www.w3.org/2000/svg">
                     <path d="M30.4407 21.7534C28.5585 22.5378 26.5391 22.9404 24.5 22.9377C15.9738 22.9377 9.0625 16.0265 9.0625 7.50024C9.0625 5.3944 9.48367 3.38832 10.2468 1.55957C7.43399 2.733 5.03128 4.71255 3.34133 7.24889C1.65137 9.78524 0.749739 12.7649 0.75 15.8127C0.75 24.339 7.66125 31.2502 16.1875 31.2502C19.2353 31.2505 22.215 30.3489 24.7513 28.6589C27.2877 26.969 29.2672 24.5662 30.4407 21.7534Z" stroke="black" class="dark:stroke-white"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                    
             </div>
@@ -40,10 +40,10 @@
 
 
     <!-- ======= hero section Start ======= -->
-    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 py-5">
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 py-5 dark:bg-slate-800 dark:text-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center lg:items-start">
             <div class="col-span-1">
-                <h4 class="text-lg font-semibold mt-4 md:mt-8 mb-4">Discover <span class="text-red-500">-</span>Interact <span class="text-red-500">-</span>Engage</h4>
+                <h4 class="text-lg font-semibold mt-4 md:mt-8 mb-4 ">Discover <span class="text-red-500">-</span>Interact <span class="text-red-500">-</span>Engage</h4>
                 <h1 class="text-6xl font-bold leading-snug">Google <br> <span class="text-red-500 border-b-4 border-b-red-500">IT Support</span><br>Certificate</h1>
                 <p class="text-lg my-8 md:my-12">This is your path to a career in IT. &nbsp;In this program, &nbsp;you’ll learn in-demand skills with no degree or experience required.</p>
 
@@ -67,7 +67,7 @@
 
                 <div class="space-x-6 mt-8">
                     <button class="py-2.5 px-5 bg-red-500 text-white rounded-lg hover:bg-red-600 hover:scale-105 hover:shadow-md transition-all">Sign up</button>
-                    <button class="py-2.5 px-5 bg-white border rounded-lg hover:border-red-500 hover:scale-105 hover:shadow-md transition-all">Learn more</button>
+                    <button class="py-2.5 px-5 bg-white border rounded-lg hover:border-red-500 hover:scale-105 hover:shadow-md transition-all dark:text-black">Learn more</button>
                 </div>
             </div>
             <div class="col-span-1 hidden md:block">
@@ -80,21 +80,21 @@
 
     <!-- ======= logo section Start ======= -->
     <section class="px-3 md:px-8 lg:px-16 py-5">
-        <div class="container mx-auto flex justify-evenly items-center">
+        <div class="container mx-auto flex justify-evenly items-center ">
             <div>
-                <p class="font-medium hidden lg:block">Pave your path to career success by <br> gaining  a  professional  Google <br>certificate with the support of C4U</p>
+                <p class="font-medium hidden lg:block dark:text-white">Pave your path to career success by <br> gaining  a  professional  Google <br>certificate with the support of C4U</p>
             </div>
-            <div class="border-e-2 border-e-red-100 h-32 hidden lg:block"></div>
+            <div class="border-e-2 border-e-red-100 h-32 hidden lg:block dark:opacity-60"></div>
             <div>
-                <img src="Assets/Google.webp" alt="image" >
+                <img src="Assets/Google.webp" alt="image">
             </div>
-            <div class="border-e-2 border-e-red-100 sm:h-32"></div>
+            <div class="border-e-2 border-e-red-100 sm:h-32 dark:opacity-60"></div>
             <div>
-                <img src="Assets/Work & Pensions.webp" alt="image">
+                <div class="sm:h-[137px] sm:w-[149px] h-[96px] w-[104px] bg-[url('/Assets/Work_&_Pensions.webp')] bg-no-repeat bg-cover dark:bg-[url('/Assets/Work_&_Pensions-white.webp')]"></div>
             </div>
-            <div class="border-e-2 border-e-red-100 sm:h-32"></div>
+            <div class="border-e-2 border-e-red-100 sm:h-32 dark:opacity-60"></div>
             <div>
-                <img src="Assets/logo.webp" alt="image">
+                <div class="sm:h-[46px] sm:w-[138px] h-[39px] w-[117px] scale-75 sm:scale-100 bg-[url('/Assets/logo.webp')] bg-no-repeat bg-cover dark:bg-[url('/Assets/logo-white.webp')]"></div>
             </div>
         </div>
     </section>
@@ -102,7 +102,7 @@
 
 
     <!-- ======= what you learn section Start ======= -->
-    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-20 pb-10">
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-20 pb-10 dark:bg-slate-800">
         <div class="container mx-auto grid md:grid-cols-2 gap-5">
             <div class="item-shadow">
                 <div class="border-b-2 border-b-red-100 mb-2">
@@ -129,7 +129,7 @@
             </div>
 
             <div class="item-shadow">
-                <img src="Assets/IT_social 1.webp" alt="image">
+                <img src="Assets/IT_social 1.webp" alt="image" class="rounded-xl">
                 <div class="border-b-2 border-b-red-100 my-2">
                     <h1 class="text-2xl font-semibold pb-4">Skills you will gain</h1>
                 </div>
@@ -155,7 +155,7 @@
 
 
     <!-- =======  jobs section Start ======= -->
-    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-10 pb-20">
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-10 pb-20 dark:bg-slate-800">
         <div class="container mx-auto flex flex-col-reverse md:flex-row gap-5">
             <div class="item-shadow basis-1/2">
                 <div class="border-b-2 border-b-red-100 mb-2">
@@ -238,16 +238,16 @@
 
 
     <!-- =======  Courses section Start ======= -->
-    <section class="bg-white px-3 md:px-8 lg:px-16 py-10 ml:py-0">      
+    <section class="bg-white px-3 md:px-8 lg:px-16 py-10 ml:py-0 dark:bg-slate-900">      
         <div class="container mx-auto grid grid-cols-12 items-center relative">
             <div class="absolute bottom-10 border-b-2 border-b-red-100 w-full hidden ml:block"></div>
 
             <div class="col-span-12 ml:col-span-8">
-                <h1 class="text-2xl sm:text-4xl lg:text-5xl font-semibold mb-10 leading-snug">
+                <h1 class="text-2xl sm:text-4xl lg:text-5xl font-semibold mb-10 leading-snug dark:text-white">
                     There are 5 Courses in this <br>Professional Certificate
                 </h1>
                 <div class=" flex gap-x-10 gap-y-6 flex-wrap">
-                    <button class="tag-2 bg-green-400">Course 1</button>
+                    <button class="tag-2 bg-green-400 dark:text-black">Course 1</button>
                     <button class="tag-2">Course 2</button>
                     <button class="tag-2">Course 3</button>
                     <button class="tag-2">Course 4</button>
@@ -264,7 +264,7 @@
 
 
     <!-- =======  Course-1 section Start ======= -->
-    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 py-20">
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 py-20 dark:bg-slate-800">
         <div class="course-card">
             <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
                 <div>
@@ -295,7 +295,7 @@
             </div>
 
 
-            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl">
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
                 <div class="mb-6">
                     <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
                     <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
@@ -370,7 +370,7 @@
 
 
     <!-- =======  Course-2 section Start ======= -->
-    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-36 relative">
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-36 relative dark:bg-slate-800">
         <img src="Assets/Connector Vector.webp" alt="image" class="absolute -top-10 md:-top-28 lg:-top-44 xl:-top-72 z-10 right-1/2 translate-x-1/2 container px-3 md:px-8 lg:px-16">
 
         <div class="course-card">
@@ -403,7 +403,7 @@
             </div>
 
 
-            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl">
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
                 <div class="mb-6">
                     <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
                     <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
@@ -478,10 +478,10 @@
 
 
     <!-- =======  Course-3 section Start ======= -->
-    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16">
+    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16 dark:bg-slate-800">
         <img src="Assets/Connector Vector (1).webp" alt="image" class="container mx-auto relative z-10">
     </div>
-    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16">
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 dark:bg-slate-800 pb-2">
         <div class="course-card">
             <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
                 <div>
@@ -512,7 +512,7 @@
             </div>
 
 
-            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl">
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
                 <div class="mb-6">
                     <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
                     <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
@@ -587,10 +587,10 @@
 
 
     <!-- =======  Course-4 section Start ======= -->
-    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16">
+    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16 dark:bg-slate-800">
         <img src="Assets/Connector Vector (2).webp" alt="image" class="container mx-auto relative z-10">
     </div>
-    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16">
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 dark:bg-slate-800 pb-2">
         <div class="course-card">
             <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
                 <div>
@@ -621,7 +621,7 @@
             </div>
 
 
-            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl">
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
                 <div class="mb-6">
                     <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
                     <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
@@ -696,10 +696,10 @@
 
 
     <!-- =======  Course-5 section Start ======= -->
-    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16">
+    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16 dark:bg-slate-800">
         <img src="Assets/Connector Vector.webp" alt="image" class="container mx-auto relative z-10">
     </div>
-    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pb-32">
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pb-32 dark:bg-slate-800">
         <div class="course-card">
             <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
                 <div>
@@ -730,7 +730,7 @@
             </div>
 
 
-            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl">
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
                 <div class="mb-6">
                     <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
                     <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
@@ -807,7 +807,7 @@
     <!-- =======  review section Start ======= -->
     <section class="bg-[url('/Assets/workSpace-f-img.webp')] bg-no-repeat bg-cover">
         <div class="container ps-4 md:ps-20 lg:ps-40 xl:ps-80 pt-10 pb-16 w-fit">
-            <div class="bg-white p-4 sm:p-8 w-72 rounded-xl">
+            <div class="bg-white p-4 sm:p-8 w-72 rounded-xl dark:bg-slate-900 dark:text-white dark:shadow-xl dark:shadow-white/50">
                 <img src="Assets/cotation-mark.webp" alt="image" class="w-8 mb-1.5 sm:mb-3">
                 <h4 class="text-xs font-medium sm:text-sm mb-3 sm:mb-6">
                     I worked in retail and needed to make a change. The certificate is really designed for you to go at your own pace. This is something that anybody can do
@@ -822,12 +822,12 @@
 
 
     <!-- =======  footer section Start ======= -->
-    <footer>
+    <footer class="dark:text-white">
         <section class="px-3 md:px-8 lg:px-16">
             <div class="container mx-auto">
                 <div class="grid grid-cols-6 gap-y-8 ml:ps-10 py-10">
                     <div class="col-span-6 ml:col-span-2 xl:col-span-2">
-                        <img src="Assets/logo.webp" alt="logo" class="w-32 mb-6">
+                        <div class="logo-img mb-6"></div>
                         <p class="opacity-80">
                             Level39 <br>One Canada Square, <br> Canary Wharf, <br>London, E14 5AB
                         </p>
@@ -883,9 +883,19 @@
                 </div>
             </div>
         </section>
-        <div class="border-b border-b-red-100"></div>
+        <div class="border-b border-b-red-100 dark:opacity-70"></div>
         <p class="text-center opacity-80 py-3 text-sm">Copyright 2022 Quickly LTD</p>
     </footer>
     <!-- =======  footer section End ======= -->
+
+
+    <!-- =======  Dark-mode script Start ======= -->
+    <script>
+        const htmlTag = document.getElementById("htmlDoc");
+        document.getElementById("switch").addEventListener("click", function () {
+            htmlTag.classList.toggle("dark");
+        })
+    </script>
+    <!-- =======  Dark-mode script End ======= -->
 </body>
 </html>

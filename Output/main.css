@@ -5,8 +5,12 @@
 @tailwind utilities;
 
 @layer utilities {
+    .logo-img{
+        @apply h-[46px] w-[138px] cursor-pointer bg-[url('/Assets/logo.webp')] bg-no-repeat bg-cover dark:bg-[url('/Assets/logo-white.webp')]
+    }
+
     .item-shadow{
-        @apply bg-white rounded-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] p-5 hover:shadow-[0_4px_4px_2px_rgba(0,0,0,0.25)] hover:scale-[1.02] transition-all
+        @apply bg-white rounded-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] p-5 hover:shadow-[0_4px_4px_2px_rgba(0,0,0,0.25)] hover:scale-[1.02] transition-all dark:bg-slate-900 dark:text-white dark:shadow-white/25
     }
 
     .tag-1{
@@ -18,11 +22,11 @@
     }
 
     .tag-2{
-        @apply py-1.5 px-8 uppercase border-black border rounded-full hover:bg-green-400 transition-all
+        @apply py-1.5 px-8 uppercase border-black border rounded-full hover:bg-green-400 transition-all dark:border-white dark:text-white dark:hover:text-black
     }
 
     .course-card{
-        @apply container mx-auto grid grid-cols-12 rounded-xl shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] hover:shadow-[0_4px_4px_2px_rgba(0,0,0,0.25)] hover:scale-[1.02] transition-all duration-300
+        @apply container mx-auto grid grid-cols-12 rounded-xl shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] hover:shadow-[0_4px_4px_2px_rgba(0,0,0,0.25)] hover:scale-[1.02] transition-all duration-300 dark:shadow-white/25
     }
 
     .course-tag{
